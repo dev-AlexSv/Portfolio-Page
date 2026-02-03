@@ -1,0 +1,77 @@
+:root {
+    --color-black: #000000;
+    --color-2: #14213d;
+    --color-3: #fca311;
+    --color-4: #e5e5e5;
+    --color-5: #ffffff;
+}
+
+@font-face {
+    font-family: "Merriweather";
+    src: url(../assets/fonts/Merriweather/static/Merriweather_120pt-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url(../assets/fonts/Roboto/static/Roboto-Light.ttf);
+}
+
+/* GENERAL STYLES*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+/* MAIN STYLES */
+
+/* HEADER */
+header {
+    background-color: var(--color-2);
+    height: 20%;
+    padding: 30px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    width: 700px;
+}
+
+nav > ul > li {
+    color: var(--color-5);
+    cursor: pointer;
+    font-family: "Merriweather";
+    font-size: 1.3rem;
+    list-style-type: none;
+    padding: 20px 10px;
+    text-decoration: none;
+}
+
+nav > ul > li:hover {
+    background-color: var(--color-3);
+}
+
+/* MAIN CONTENT */
+
+main {
+    background-color: var(--color-black);
+    width: 100%;
+}
+
+#profile {
+    background-color: var(--color-5);
+    width: 100%;
+    height: 550px;
+}
